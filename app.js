@@ -9,9 +9,13 @@ function createOptions(array){
     }
     return select
 }
+
+
 let semester = {
-    grades: ["A+","A","A-","B+","B","B-","C+","C","C-","F"],
-    credits: [1,2,3,4],
+    gradeValues: ["A+","A","A-","B+","B","B-","C+","C","C-","F"],
+    creditValues: [1,2,3,4],
+    gpaValues : {"A+":4,"A":4,"A-":3.67,"B+":3.33,"B":3,"B-":2.67,"C+":2.33,
+    "C":2,"C-":1.67,"F":0},
     //Method To Add Another Row/Course
     add: ()=>{
         let tbody = document.getElementById('tbody')
@@ -27,12 +31,12 @@ let semester = {
                     td.appendChild(input)
                     break
                 case 1:
-                    select = createOptions(semester.grades)
+                    select = createOptions(semester.gradeValues)
                     select.className = "grades"
                     td.appendChild(select)
                     break
                 case 2:
-                    select = createOptions(semester.credits)
+                    select = createOptions(semester.creditValues)
                     select.className = "credits"
                     td.appendChild(select)
                     break
@@ -40,6 +44,7 @@ let semester = {
             tr.appendChild(td)
         }
         tbody.appendChild(tr)
+        document.getElementById('gpaContainer').innerHTML = ""
     },
     //Method To remove the last row
     remove: ()=>{
@@ -47,8 +52,19 @@ let semester = {
         if(rows.length > 1){
             rows[rows.length-1].remove()
         }
+        document.getElementById('gpaContainer').innerHTML = ""
     },
+    //Method To calculate GPA
     calculate: ()=>{
-
+        let credits = document.getElementsByClassName('credits')
+        let grades = document.getElementsByClassName('grades')
+        let gradePoints = 0
+        let sumOfCredits = 0
+        for(var i = 0; i < grades.length;i++){
+            gradePoints += semester.gpaValues[grades[i].value]*credits[i].value
+            sumOfCredits += parseInt(credits[i].value)
+        }
+        let gpa = (gradePoints/sumOfCredits).toFixed(2)
+        document.getElementById('gpaContainer').innerHTML = "Your Gpa: " + gpa
     }
 }
