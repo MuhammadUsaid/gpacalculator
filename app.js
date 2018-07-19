@@ -16,6 +16,7 @@ let semester = {
     add: ()=>{
         let tbody = document.getElementById('tbody')
         let tr = document.createElement('tr')
+        tr.className = "rows"
         for(var i = 0;i < 3; i++){
             let td = document.createElement('td')
             let input = document.createElement('input')
@@ -40,8 +41,12 @@ let semester = {
         }
         tbody.appendChild(tr)
     },
+    //Method To remove the last row
     remove: ()=>{
-
+        let rows = document.getElementsByClassName('rows')
+        if(rows.length > 1){
+            rows[rows.length-1].remove()
+        }
     },
     calculate: ()=>{
 
