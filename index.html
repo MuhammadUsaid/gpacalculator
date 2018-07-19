@@ -20,19 +20,39 @@
                             <th>Credit</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="tbody">
                         <tr>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
+                            <td><input type="text" class="courses"></td>
+                            <td>
+                                <select name="grade" class="grades">
+                                    <option value="A+">A+</option>
+                                    <option value="A">A</option>
+                                    <option value="A-">A-</option>
+                                    <option value="B+">B+</option>
+                                    <option value="B">B</option>
+                                    <option value="B-">B-</option>
+                                    <option value="C+">C+</option>
+                                    <option value="C">C</option>
+                                    <option value="C-">C-</option>
+                                    <option value="F">F</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="credit" class="credits">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div id="buttonContainer">
-                <input type="button" value="Add Course">
-                <input type="button" value="Remove Course">
-                <input type="button" value="Calculate GPA">
+                <input type="button" value="Add Course" onclick="semester.add()">
+                <input type="button" value="Remove Course" onclick="semester.remove(this.parentNode.previousSibling)">
+                <input type="button" value="Calculate GPA" onclick="semester.calculate()">
             </div>
             <div id="gpaContainer"></div>
         </div>
