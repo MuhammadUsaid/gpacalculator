@@ -53,7 +53,10 @@ body{
     padding: 10px;
 }
 #calculatorContainer{
-    border: solid black;
+    border: solid #792573;
+    border-radius: 30px;
+    padding: 20px 0px;
+    margin: 25px 0px;
 }
 
 th{
@@ -77,6 +80,11 @@ th{
     padding: 5px;
     
 }
+#calculatorContainer .button:hover,#calculatorContainer .courses:hover,#calculatorContainer .grades:hover,#calculatorContainer .credits:hover {
+    background-color: #DCB9DD;
+}
+
+
 /* MEDIA SCREENS */
 
 @media only screen and (max-width: 1550px) {
@@ -214,10 +222,38 @@ th{
     }
 }
 
+@media only screen and (max-width: 400px) {
+    #calculatorContainer .courses,#calculatorContainer .grades,#calculatorContainer .credits{
+        margin: 5px 0px;
+    }
+    #calculatorContainer .button{
+        margin: 5px 0px;
+    }
+
+}
+
 @media only screen and (max-width: 390px) {
     #guideLineContainer h1,#calculatorContainer h1,#calculatorContainer #contentContainer {
         margin: 20px 0px;
         
+    }
+    th{
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width: 365px) {
+    #calculatorContainer .courses,#calculatorContainer .grades,#calculatorContainer .credits{
+        padding: 5px 2px;
+        font-size: 12px;
+        border-radius: 6px;
+    }
+    #calculatorContainer .button{
+        padding: 5px 2px;
+        font-size: 12px;
+        border-radius: 6px;
+    }
+    th{
+        font-size: 15px;
     }
 }
 @media only screen and (max-width: 350px) {
