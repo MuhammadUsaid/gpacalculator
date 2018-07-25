@@ -10,8 +10,8 @@ p,ol{
 #introductionContainer h1{
     border: 1px solid #CD7DC8;
     border-radius: 10px;
-    background: linear-gradient(to right,#EDD79F -15%,#CDA1C6,#DF9BD3,#EDD79F 120%,#EAC3EC);
-    color: #792573;
+    background: purple;
+    color: white;
     width: 400px;
     text-align: center;
     padding: 20px;
@@ -20,10 +20,10 @@ p,ol{
 }
 .guideHeading h1{
     border:2px solid #CD7DC8;
-    background-color: #EDD79F;
+    background: purple;
+    color: white;
     border-radius: 10px;
     padding: 7px;
-    color: #953D85;
     width: 580px;
     
 }
@@ -31,8 +31,8 @@ p,ol{
 #guideLineContainer h1{
     border: 1px solid #CD7DC8;
     border-radius: 10px;
-    background: linear-gradient(to right,#EDD79F -15%,#CDA1C6,#DF9BD3,#EDD79F 120%,#EAC3EC);
-    color: #792573;
+    background: purple;
+    color: white;
     width: 550px;
     text-align: center;
     padding: 20px;
@@ -53,18 +53,17 @@ p,ol{
     padding: 20px;
     border-radius: 10px;
     margin: 20px 0px;
-    background: linear-gradient(to right,#EDD79F -15%,#CDA1C6,#DF9BD3,#EDD79F 120%,#EAC3EC);
-    color: #792573;
+       background: purple;
+    color: white;
 }
 
 #contentContainer{
     margin: 5% 25% 25% 25%;
     border: 2px solid #CD7DC8;
     border-radius: 20px;
-    padding: 10px;
+    padding: 2px 3% 2px;
 }
-#calculatorContainer{
-    
+#calculatorContainer{    
     border-radius: 30px;
     padding: 20px 0px;
     margin: 25px 0px;
@@ -97,6 +96,23 @@ th{
 #calculatorContainer .button:hover,#calculatorContainer .courses:hover,#calculatorContainer .grades:hover,#calculatorContainer .credits:hover {
     background-color: #DCB9DD;
 }
+
+#calculatorContainer .button:hover{
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/*Gpa Container*/
+.gpaContainer{
+    border: 1px solid #90468D;
+    border-radius: 5px;
+    margin: 4px auto;
+    width: 40%;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 2px;
+}
+
 
 
 /* MEDIA SCREENS */

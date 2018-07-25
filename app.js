@@ -45,6 +45,7 @@ let semester = {
         }
         tbody.appendChild(tr)
         document.getElementById('gpaContainer').innerHTML = ""
+        document.getElementById('gpaContainer').className = ""
     },
     //Method To remove the last row
     remove: ()=>{
@@ -53,6 +54,7 @@ let semester = {
             rows[rows.length-1].remove()
         }
         document.getElementById('gpaContainer').innerHTML = ""
+        document.getElementById('gpaContainer').className = ""
     },
     //Method To calculate GPA
     calculate: ()=>{
@@ -66,5 +68,6 @@ let semester = {
         }
         let gpa = (gradePoints/sumOfCredits).toFixed(2)
         document.getElementById('gpaContainer').innerHTML = "Your Gpa: " + gpa
+        document.getElementById('gpaContainer').className = "gpaContainer"
     }
 }
