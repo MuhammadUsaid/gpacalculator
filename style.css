@@ -1,8 +1,10 @@
 
 body{
-    background-color:#E4C7E4;
+    background-color:white;
     font-family: Georgia;
-
+}
+p,ol{
+    font-size: 50px;
 }
 
 #introductionContainer h1{
@@ -16,6 +18,15 @@ body{
     margin: 20px 550px;
     font-size: 35px;
 }
+.guideHeading h1{
+    border:2px solid #CD7DC8;
+    background-color: #EDD79F;
+    border-radius: 10px;
+    padding: 7px;
+    color: #953D85;
+    width: 580px;
+    
+}
 
 #guideLineContainer h1{
     border: 1px solid #CD7DC8;
@@ -25,7 +36,7 @@ body{
     width: 550px;
     text-align: center;
     padding: 20px;
-    margin: 20px 500px;
+    margin: 20px 450px;
     font-size: 35px;
 }
 
@@ -41,7 +52,7 @@ body{
     text-align: center;
     padding: 20px;
     border-radius: 10px;
-    margin: 20px 450px;
+    margin: 20px 0px;
     background: linear-gradient(to right,#EDD79F -15%,#CDA1C6,#DF9BD3,#EDD79F 120%,#EAC3EC);
     color: #792573;
 }
@@ -53,7 +64,7 @@ body{
     padding: 10px;
 }
 #calculatorContainer{
-    border: solid #792573;
+    
     border-radius: 30px;
     padding: 20px 0px;
     margin: 25px 0px;
@@ -71,6 +82,9 @@ th{
     padding: 5px;
     
     
+}
+.courses{
+    width: 120px;
 }
 
 #calculatorContainer .button{
@@ -91,8 +105,11 @@ th{
     #introductionContainer h1 {
         margin: 20px 500px;
     }
-    #guideLineContainer h1,#calculatorContainer h1,#calculatorContainer #contentContainer {
+    #guideLineContainer h1,#calculatorContainer #contentContainer {
         margin: 20px 450px;
+    }
+    #calculatorContainer h1{
+        margin: 20px 420px;
     }
 }
 
@@ -104,6 +121,9 @@ th{
     #guideLineContainer h1 {
         margin: 20px 400px;
     }
+    #calculatorContainer h1{
+        margin: 20px 380px;
+    }
 
 }
 
@@ -113,6 +133,9 @@ th{
     }
     #guideLineContainer h1,#calculatorContainer h1,#calculatorContainer #contentContainer {
         margin: 20px 330px;
+    }
+    #calculatorContainer h1{
+        margin: 20px 310px;
     }
     
 }
@@ -124,6 +147,9 @@ th{
     #guideLineContainer h1,#calculatorContainer #contentContainer,#calculatorContainer h1 {
         margin: 20px 265px;
     }
+    #calculatorContainer h1{
+        margin: 20px 255px;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -132,6 +158,12 @@ th{
     }
     #guideLineContainer h1,#calculatorContainer h1,#calculatorContainer #contentContainer {
         margin: 20px 200px;
+    }
+    #calculatorContainer h1{
+        margin: 20px 190px;
+    }
+    #introductionContainer h1,#guideLineContainer h1,#calculatorContainer h1 {
+        font-size: 30px;
     }
 }
 
@@ -142,6 +174,9 @@ th{
     #guideLineContainer h1,#calculatorContainer h1,#calculatorContainer #contentContainer {
         margin: 20px 160px;
     }
+    #calculatorContainer h1{
+        margin: 20px 140px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -151,6 +186,10 @@ th{
     #guideLineContainer h1,#calculatorContainer h1,#calculatorContainer #contentContainer {
         margin: 20px 90px;
     }
+    #calculatorContainer h1{
+        margin: 20px 80px;
+    }
+    
 }
 
 @media only screen and (max-width: 750px) {
@@ -160,7 +199,11 @@ th{
     #guideLineContainer h1,#calculatorContainer h1,#calculatorContainer #contentContainer {
         margin: 20px 80px;
     }
+    #calculatorContainer h1{
+        margin: 20px 70px;
+    }
 }
+
 
 @media only screen and (max-width: 700px) {
     #introductionContainer h1 {
@@ -170,12 +213,25 @@ th{
         margin: 20px 50px;
         width: 80%;
     }
+    #calculatorContainer h1{
+        margin: 20px 40px;
+    }
+    #introductionContainer h1,#guideLineContainer h1,#calculatorContainer h1 {
+        font-size: 27px;
+    }
 }
 
 @media only screen and (max-width: 650px) {
     #introductionContainer h1 {
         margin: 20px 85px;
     }
+    #calculatorContainer h1{
+        margin: 20px 30px;
+    }
+    .guideHeading h1{
+        width:95%
+    }
+
 }
 @media only screen and (max-width: 610px) {
     #introductionContainer h1 {
@@ -186,6 +242,9 @@ th{
         margin: 20px 25px;
         width: 85%;
     }
+    #calculatorContainer h1{
+        margin: 20px 20px;
+    }
 }
 
 @media only screen and (max-width: 570px) {
@@ -194,6 +253,15 @@ th{
     }
     #guideLineContainer h1,#calculatorContainer h1,#calculatorContainer #contentContainer {
         margin: 20px 20px;
+    }
+    #calculatorContainer h1{
+        margin: 20px 15px;
+    }
+    .guideHeading h1{
+        font-size:27px;
+    }
+    #introductionContainer h1,#guideLineContainer h1,#calculatorContainer h1 {
+        font-size: 24px;
     }
     
 
@@ -213,12 +281,21 @@ th{
         margin: 20px 30px;
         width: 70%;
     }
+    .guideHeading h1{
+        font-size:23px;
+    }
 }
 
 @media only screen and (max-width: 420px) {
     #guideLineContainer h1,#calculatorContainer #contentContainer ,#calculatorContainer h1{
         margin: 20px 8px;
         
+    }
+    #introductionContainer h1,guideLineContainer h1,#calculatorContainer h1 {
+        font-size: 30px;
+    }
+    #introductionContainer h1,#guideLineContainer h1,#calculatorContainer h1 {
+        font-size: 23px;
     }
 }
 
@@ -229,7 +306,9 @@ th{
     #calculatorContainer .button{
         margin: 5px 0px;
     }
-
+    .guideHeading h1{
+        font-size:19px;
+    }
 }
 
 @media only screen and (max-width: 390px) {
@@ -255,10 +334,22 @@ th{
     th{
         font-size: 15px;
     }
+    #introductionContainer h1,#guideLineContainer h1,#calculatorContainer h1 {
+        font-size: 20px;
+    }
 }
 @media only screen and (max-width: 350px) {
     #introductionContainer h1 {
         margin: 20px 22px;
         
+    }
+    .guideHeading h1{
+        font-size:16px;
+    }
+    th{
+        font-size: 13px;
+    }
+    p,ol{
+        font-size: 100px;
     }
 }
