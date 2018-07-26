@@ -31,6 +31,9 @@ p,ol{
     margin: 0 auto;
     text-align: center;
 }
+.guideHeading{
+    text-decoration: none;
+}
 
 #guideLineContainer h1{
     border: 1px solid #CD7DC8;
