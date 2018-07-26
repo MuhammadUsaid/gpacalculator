@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    
     <link rel="icon" href="icon.png">
     <title>GPA Calculator</title>
 </head>
@@ -25,7 +26,7 @@
     </div>
     <a href="#guideLineContainer" class="guideHeading"><h1><i class="fas fa-chevron-down"></i> Guidelines To Calculate GPA</h1></a>
     <div id="calculatorContainer">
-        <h1>Gpa Calculator</h1>
+        <h1>GPA Calculator</h1>
         <div id="contentContainer">
             <div id="semesterContainer">
                 <table>
@@ -72,7 +73,7 @@
                 <input type="button" class="button" value="Remove Course" onclick="semester.remove()">
                 <input type="button" class="button" value="Calculate GPA" onclick="semester.calculate()">
             </div>
-            <div id="gpaContainer" class="gpaContainer"></div>
+            <div id="gpaContainer"></div>
         </div>
     </div>
     <script src="app.js"></script>
